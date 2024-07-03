@@ -16,3 +16,12 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+  .hover-trigger:hover ~ .hover-target {
+    flex-basis: 25%;
+  }
+  .hover-trigger:hover {
+    flex-basis: 50%;
+  }
+
