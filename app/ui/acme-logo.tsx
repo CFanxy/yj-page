@@ -4,7 +4,11 @@ import Image from 'next/image';
 
 export default function AcmeLogo() {
   return (
-      // <Image src="/public/header/logo-v2.png"  className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+      <Image src="/header/logo-v2.png"
+    className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
+    width="280" 
+    height="130"
+    alt={'desktop logo'} />
     
       // <Image
       //       src="/hero-desktop.png"
