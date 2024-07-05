@@ -1,6 +1,8 @@
 import YJLogoHeader from '@/app/ui/logo-header';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import YjContent from '@/app/ui/yj-element/body-img';
+import YjContentBoxBg from '@/app/ui/yj-element/content-box-bg';
 
 // #65df91
 
@@ -11,7 +13,28 @@ export default function Page() {
         
         <YJLogoHeader/>
 
-        <div className="flex grow flex-col gap-4 justify-center items-center" style={{ backgroundColor: '#65df91' }}>
+        {/* <YjContent url='/content/we-do.png'/> */}
+
+        {/* <YjContentBoxBg url='/yj-banner1.jpg' /> */}
+
+        <div className="flex grow flex-col" 
+          style={{ 
+              backgroundImage: `url(/yj-banner1.jpg)`,
+              backgroundSize: 'cover', // 或 'contain'
+              backgroundRepeat: 'no-repeat', // 防止背景图片重复
+              backgroundPosition: 'center', // 将背景图片居中 
+              width: '100vw',
+              height: 'auto',
+              paddingTop: '38%'
+    }}>
+    </div>
+
+        <YjContentBoxBg url='/content/we-do.png' />
+        <YjContentBoxBg url='/content/we-solve.png' />
+        <YjContentBoxBg url='/content/time-line.png' />
+        <YjContentBoxBg url='/content/case-1-yuantongluqiao.png' />
+
+        {/* <div className="flex grow flex-col gap-4 justify-center items-center" style={{ backgroundColor: '#65df91' }}>
           <div className="flex flex-col justify-center items-center gap-0 px-6 py-10 ">
             <p className="text-xl text-black-800 md:text-3xl">
             狂想不止，羿启引爆
@@ -21,7 +44,7 @@ export default function Page() {
             Keep Dreaming, we are blooming
             </p>
           </div>
-        </div>
+        </div>  */}
       </div>
       <div className='flex flex-col'>
         <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -45,14 +68,14 @@ export default function Page() {
             </div>
           </div>
       </div>
-      <div className='flex flex-col'>
+      {/* <div className='flex flex-col'>
         <div className="flex flex-row">
           <div className="h-24 p-8 bg-blue-500 mx-2 rounded-lg px-6 basis-1/4 hover:basis-1/2 hover-trigger">01</div>
           <div className="h-24 p-8 bg-blue-500 mx-2 rounded-lg px-6 basis-1/4 hover:basis-1/2 hover-trigger">02</div>
           <div className="h-24 p-8 bg-blue-500 mx-2 rounded-lg px-6 basis-1/2  hover-target">03</div>
         </div>
         
-      </div>
+      </div> */}
     </main>
   );
 }
