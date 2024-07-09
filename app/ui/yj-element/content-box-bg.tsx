@@ -15,8 +15,7 @@ export default function YjContentBox({ url }: { url: string }) {
         width: '80vw',
         height: 'auto',
         paddingTop: '56.25%',
-        position: 'relative',
-        marginBottom: '500px'
+        position: 'relative'
     }}>
         </div>
     </div>
