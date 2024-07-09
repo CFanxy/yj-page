@@ -13,21 +13,24 @@ export default function Page() {
         
         <YJLogoHeader/>
 
-        {/* <YjContent url='/content/we-do.png'/> */}
-
+        
         {/* <YjContentBoxBg url='/yj-banner1.jpg' /> */}
 
         <div className="flex grow flex-col" 
-          style={{ 
-              backgroundImage: `url(/yj-banner1.jpg)`,
-              backgroundSize: 'cover', // 或 'contain'
-              backgroundRepeat: 'no-repeat', // 防止背景图片重复
-              backgroundPosition: 'center', // 将背景图片居中 
-              width: '100vw',
-              height: 'auto',
-              paddingTop: '38%'
-    }}>
-    </div>
+              style={{ 
+                  backgroundImage: `url(/yj-banner3.png)`,
+                  backgroundSize: 'contain', // 或 'contain'
+                  backgroundRepeat: 'no-repeat', // 防止背景图片重复
+                  backgroundPosition: 'center', // 将背景图片居中 
+                  width: '100vw',
+                  height: 'auto',
+                  paddingTop: '32%'
+        }}>
+          <div className=""></div>
+        </div>
+
+        {/* <YjContent url='/content/we-do.png'/> */}
+
 
         <YjContentBoxBg url='/content/we-do.png' />
         <YjContentBoxBg url='/content/we-solve.png' />
